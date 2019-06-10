@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/zepto.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=3.0&ak=0WqXeb8GhOfbrRikaplOMDcAovvAzXK3"></script>
+</head>
+<body>
+<div class="head1">
+    <div class="head1_a"><span></span></div>
+    <div class="head1_b">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/img.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/img.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/img.png" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="jieshao1">
+    <ul>
+        <li style="font-size: .16rem"><span>天鹅湾小区精装两居，满五唯一，业主换房急售</span></li>
+        <li style="font-size:.12rem">
+            <span style="color: #db4c3f">576</span> 万元(单价：46327元/平)
+            <span id="jisuanji"></span>
+        </li>
+        <li style="color: #b0b0b0;font-size:.12rem">挂牌时间2015年6月20日</li>
+        <li style="color: #849aae;font-size:.12rem">
+            <span class="jieshao_a">学区房</span>
+            <span class="jieshao_b">独家</span>
+            <span class="jieshao_c">满五唯一</span>
+        </li>
+    </ul>
+</div>
+<div style="width: 100%;height: .14rem;background: #f5f5f5"></div>
+<div class="jieshao2">
+    <ul>
+        <li>
+            <span>户型：3室2厅</span><span>面积：100平</span>
+        </li>
+        <li>
+            <span>楼层：中楼层</span><span>朝向：西南</span>
+        </li>
+        <li>
+            <span>装修：精装</span><span>楼型：塔楼</span>
+        </li>
+        <li>
+            <span>年代：2004年</span><span>区域：西二旗</span>
+        </li>
+        <li>
+            <span>首付：123万</span><span>月供：15683元</span>
+        </li>
+        <li>地铁：离西二旗地铁站800米</li>
+        <li>小区：珠江帝景</li>
+        <li>学校：北京市第二实验小学</li>
+        <li style="text-align: center;color: #9999b3">
+            <span>更多房源信息</span>
+        </li>
+    </ul>
+</div>
+<div style="width: 100%;height: .14rem;background: #f5f5f5;"></div>
+<div class="tese">
+    <p>房源特色</p>
+    <div>小区环境优雅，虽处闹市中（小区南200米有美廉美超市、西30米有华联商场、星美国际影城、
+        东北角就是大中电器、小区东100米有汇佳幼儿园、昌平实验一小，昆泰国际大酒...
+    </div>
+    <span>更多特色</span>
+</div>
+<div style="width: 100%;height: .14rem;background: #f5f5f5;"></div>
+<div class="huxing">
+    <p>户型分间</p>
+    <div class="img">
+        <ul>
+            <li class="a" style="border-bottom: .001rem solid rgb(255,138,0);">
+                <div class="a_1"><img src="images/img4.png"></div>
+                <div class="a_2">
+                    <h3>当前格局</h3>
+                    <p style="margin-bottom: .07rem;">分间信息：客厅25平米，南北通透</p>
+                    <p>
+                        <span>南北通透</span>
+                        <span>全明格局</span>
+                    </p>
+                </div>
+            </li>
+            <li class="a">
+                <div class="a_1"><img src="images/img5.png"></div>
+                <div class="a_2">
+                    <h3>当前格局</h3>
+                    <p style="margin-bottom: .07rem;">分间信息：客厅25平米，南北通透</p>
+                    <p>
+                        <span>南北通透</span>
+                        <span>全明格局</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="width: 100%;height: .14rem;background: #f5f5f5;"></div>
+<div class="duikou">
+    <ul>
+        <li><h3>对口学校</h3></li>
+        <li><span>学校名称：</span>北京市第二实验小学</li>
+        <li><span>升学方式：</span>直升、派位</li>
+        <li><span>对口中学：</span>团结湖中学</li>
+        <li><span>划片小区：</span>3个划片小区 在售房源150套</li>
+        <li><span>学校特色：</span>包食宿、有校车</li>
+        <li style="display:inline-block;text-align: center"><span>查看学校详情</span></li>
+    </ul>
+</div>
+<div class="weizhi">
+    <p>位置及周边</p>
+    <div id="container"></div>
+</div>
+<div style="width: 100%;height: .14rem;background: #f5f5f5;"></div>
+<div class="tuijian">
+    <p>推荐房源</p>
+    <div class="tuijian_xx">
+        <ul>
+            <li class="b">
+                <div class="b_1"><img src="images/img6.png"></div>
+                <div class="b_2">
+                    <h3>文化部中间层一层带阁楼</h3>
+                    <p style="margin-bottom: .07rem;">2室1厅96㎡南北<span>1105万</span></p>
+                    <p style="margin-bottom: .07rem; color: #cccccc">红庙北里 <span>14268元/平</span></p>
+                    <p>
+                        <span>学区房</span>
+                    </p>
+                    <div class="b_3">推荐理由：同户型、通风好、采光好</div>
+                </div>
+            </li>
+            <li class="b" style="border-top: .01rem solid #ccc">
+                <div class="b_1"><img src="images/img7.png"></div>
+                <div class="b_2">
+                    <h3>文化部中间层一层带阁楼</h3>
+                    <p style="margin-bottom: .07rem;">2室1厅96㎡南北<span>1105万</span></p>
+                    <p style="margin-bottom: .07rem; color: #cccccc">红庙北里 <span>14268元/平</span></p>
+                    <p>
+                        <span>学区房</span>
+                    </p>
+                    <div class="b_3">推荐理由：同户型、通风好、采光好</div>
+                </div>
+            </li>
+            <li><p>查看更多相似房源</p></li>
+
+        </ul>
+    </div>
+</div>
+<!--页面底部-->
+<div class="copyright">
+    <h2>北京找房无忧 > 首页</h2>
+    <div class="content">
+        <ul>
+            <li>
+                <img src="images/apple.png" alt=""/>
+                <div>
+                    <p>iPhone</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/android.png" alt=""/>
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+        </ul>
+        <div class="text">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</div>
+<div class="di">
+    <div class="di_a"><span></span>联系经纪人</div>
+    <div class="di_b"><span></span>关注</div>
+</div>
+
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    var map = new BMap.Map("container");
+    // 创建地图实例
+    var point = new BMap.Point(113.62, 34.75);
+    // 创建点坐标
+    map.centerAndZoom(point, 15);
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.ScaleControl());
+
+</script>
+</html>
